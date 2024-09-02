@@ -1,2 +1,2 @@
 # know_your_weather
-A simple HTML based website, which tells the weather of location entered using the "Open Weather API".
+A very basic HTML based project, which tells the weather of entered location ,using the "Open Weather API".
