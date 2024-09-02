@@ -33,4 +33,4 @@ OpenWeatherMap API for providing the weather data.
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/weather-forecast-app.git
+   git clone https://github.com/vinay095/know_your_weather.git
