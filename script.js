@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
        const apiKey = " -- API KEY --";
        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&app id=${apiKey}`);
        const data = await response.json();
+       if (data.cod === '404') {
+        weatherInfo.innerHTML = `<p>City not found. Please try again.</p>`;
+        return;
+       }
+       
        const temperature = data.main.temp;
        const description = data.weather[0].description;
        const humidity = data.main.humidity;
